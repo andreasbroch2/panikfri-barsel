@@ -12,5 +12,14 @@
  * editor.
 */
 body {
-	@apply bg-background font-sans text-foreground;
+	@apply bg-background font-primary;
+} 
+p{
+	@apply md:max-w-2xl;
+}
+blockquote{
+	@apply text-gray-700 text-center italic text-xl m-12 font-medium md:max-w-2xl mx-auto;
+}
+li{
+	@apply my-4;
 }

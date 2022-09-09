@@ -8,6 +8,12 @@
  * — from https://tailwindcss.com/docs/plugins#adding-components
  */
 
+.container{
+	@apply mx-auto max-w-90 xl:max-w-screen-xl ;
+}
+.btn{
+	@apply bg-primary text-white text-3xl text-center font-bold py-4 px-8 my-4 rounded;
+}
 /**
  * Post title styles
  *
@@ -21,7 +27,7 @@
  * `postcss.config.js` file for details.
  */
 $(post-title-selector) {
-	@apply mx-auto mb-6 max-w-content text-3xl font-extrabold text-neutral-900;
+	@apply mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
 }
 
 /**
@@ -40,16 +46,6 @@ $(post-title-selector) {
  */
 $(post-content-selector) {
 	@apply prose prose-neutral max-w-none prose-a:text-primary;
-}
-
-/* Content width from the `theme.json` file */
-.entry-content > * {
-	@apply mx-auto max-w-content;
-}
-
-/* Wide width from the `theme.json` file */
-.entry-content > .alignwide {
-	@apply max-w-wide;
 }
 
 /* Full width */
